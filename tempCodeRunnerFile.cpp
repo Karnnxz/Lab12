@@ -16,6 +16,7 @@ int fibonacci(int x) {
     } else if (x == 1) {
         return 1;
     } else {
+        x = (x - 1) + (x - 2);
         return fibonacci(x - 1) + fibonacci(x - 2);
     }
 }
